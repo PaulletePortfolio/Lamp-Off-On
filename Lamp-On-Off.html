@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="widht=device, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="css/csslam.css">
+            <title>Lâmpada</title>
+        </head>
+
+        <body>   
+            <section id="fig">
+                <a onclick="liga()"><img src="http://127.0.0.1:5500/img/lampon.png"></a>
+            </section>
+            
+            
+            <script>
+                function liga(){
+                var img = document.getElementById("fig");
+                    img.innerHTML = '<a onclick="desliga()"><img src="http://127.0.0.1:5500/img/lampon.png"></a>';
+                }
+
+                function desliga(){
+                var img = document.getElementById("fig");
+                    img.innerHTML = '<a onclick="liga()"><img src="http://127.0.0.1:5500/img/lamp.png"></a>';
+                }
+            </script>
+
+
+        </body>
+</html>
